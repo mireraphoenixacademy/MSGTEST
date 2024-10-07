@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sender & Receiver</title>
+    <link rel="stylesheet" href="cssmsg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Sender</h1>
+        <div class="form-container">
+            <form id="messageForm">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div id="messageHistory" class="message-history">
+            <h2>Message History</h2>
+            <ul id="messageList">
+                <!-- Sent and received messages will be shown here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="jsmsg.js"></script>
+</body>
+</html>
